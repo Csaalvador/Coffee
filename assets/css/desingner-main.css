@@ -18,7 +18,6 @@
 
 html {
   font-size: 62.5%;
-  overflow: hidden;
   scroll-padding-top: 9rem;
   scroll-behavior: smooth;
 }
@@ -44,6 +43,19 @@ section {
   padding: 2rem 7%;
 }
 
+.heading {
+  font-size: 3rem;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  padding-bottom: 3.5rem;
+  font-size: 4rem;
+}
+
+.heading span {
+  color: var(--primary-color);
+  text-transform: uppercase;
+}
 
 .header {
   position: fixed;
@@ -238,6 +250,41 @@ cursor: pointer;
 
 
 
+.about-container .row{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: var(--black);
+}
+
+.about-container .row .image {
+  flex: 1 1 45rem;
+}
+
+.about-container .row .image img {
+  width: 100%;
+  height: 100%;
+}
+
+.about-container .row .content {
+  flex: 1 1 45rem;
+  padding: 2rem;
+}
+
+.about-container .row .content h3 {
+  font-size: 3rem;
+  color: #fff;
+}
+
+.about-container .row .content p {
+  font-size: 1.6rem;
+  color: #ccc;
+  line-height: 1.8;
+  padding: 1rem 0;
+}
+
+
+
 
 
 
@@ -359,7 +406,6 @@ section {
 .header .navbar.active {
   right: 0;
 }
-
 .header .navbar a {
   display: block;
   padding: .5rem;
@@ -372,6 +418,21 @@ section {
   width: 90%;
   right: 2rem;
 } 
+
+.home-container{
+  background-position: left;
+  justify-content: center;
+  text-align: center;
+}
+
+.home-container .content h3 {
+  font-size: 4.5rem;
+}
+
+.home-container .content p {
+  font-size: 1.5rem;
+}
+
 }
 
 @media (max-width: 450px) {

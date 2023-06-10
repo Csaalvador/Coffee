@@ -3,6 +3,7 @@
 :root {
     --primary-color: #d3ad7f;
     --black: #13131a;
+    --red: #f80000;
     --border: .1rem solid rgba(255,255,255,.2);
     --background: #010103;
 }
@@ -13,7 +14,7 @@
   box-sizing: border-box;
   font-family: 'Roboto Slab', serif;
   outline: none; text-decoration: none;
-  transition: .2s linear;
+  transition: .5s linear;
 }
 
 html {
@@ -64,9 +65,10 @@ section {
   padding: 1.5rem 7%;
   z-index: 1000;
   align-items: center;
-  background: var(--background);
+  background: rgba(0, 0, 0, 0.395);
   justify-content: space-between;
   border-bottom: var(--border);
+
 }
 
 .header .logo img{
@@ -141,6 +143,7 @@ section {
 .header .cart-items-section {
   position: absolute;
   top: 100%; right: -300vh;
+  transition: 2.5s;
   height: calc(100vh - 9.5rem);
   width: 35rem;
   padding: 1rem 2rem;
@@ -176,7 +179,8 @@ cursor: pointer;
 }
 
 .header .cart-items-section .cart-item .fa-times:hover {
-  color: var(--primary-color);
+  transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  color: var(--red);
 }
 
 .header .cart-items-section .cart-item img {
@@ -200,6 +204,12 @@ cursor: pointer;
 
 .header .cart-items-section .btn:hover {
   background: rgb(30, 154, 30);
+transition: all 0.3s ease 0s;
+  transform: translate(0, -5px);
+
+
+
+
 }
 
 
@@ -215,6 +225,10 @@ cursor: pointer;
 
  .btn:hover {
   background: #c19b6e;
+}
+
+#main-btn {
+  position: sticky;
 }
 
 .home-container {

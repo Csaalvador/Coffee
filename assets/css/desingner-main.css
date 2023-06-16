@@ -202,14 +202,11 @@ cursor: pointer;
   height: 90%;
 }
 
-.header .cart-items-section .btn:hover {
+.header .cart-items-section .btn:hover, 
+.menu .box-container .box .btn:hover {
   background: rgb(30, 154, 30);
 transition: all 0.3s ease 0s;
   transform: translate(0, -5px);
-
-
-
-
 }
 
 
@@ -224,12 +221,12 @@ transition: all 0.3s ease 0s;
 }
 
  .btn:hover {
-  background: #c19b6e;
+  background: #bd8a25;
+  transition: all 0.3s ease 0s;
+  transform: translate(0, -5px);
+
 }
 
-#main-btn {
-  position: sticky;
-}
 
 .home-container {
   min-height: 100vh;
@@ -267,8 +264,9 @@ transition: all 0.3s ease 0s;
 .about-container .row{
   display: flex;
   align-items: center;
+  width: 100%;
   flex-wrap: wrap;
-  background-color: var(--black);
+  background: radial-gradient(rgba(161, 83, 83, 0.5), rgba(0, 0, 0, 0.5));
 }
 
 .about-container .row .image {
@@ -276,8 +274,13 @@ transition: all 0.3s ease 0s;
 }
 
 .about-container .row .image img {
-  width: 100%;
+  width: 70%;
   height: 100%;
+  border-bottom: 5px solid rgb(4, 4, 4);
+  box-shadow: 0 10px 10px 5px rgba(0, 0, 0, 0.5);
+  margin-top: 2rem;
+  margin-left: 2rem;
+  cursor: pointer;
 }
 
 .about-container .row .content {
@@ -297,6 +300,147 @@ transition: all 0.3s ease 0s;
   padding: 1rem 0;
 }
 
+.menu .box-container {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+}
+
+.menu .box-container .box {
+  padding: 5rem;
+  text-align: center;
+  border:var(--border);
+}
+
+.menu .box-container .box img {
+  height: 12rem;
+}
+
+.menu .box-container .box h3 {
+  font-size: 2rem;
+  color: #fff;
+  padding: 1rem 0;
+}
+
+.menu .box-container .box .price {
+  font-size: 1.6rem;
+  color: #ccc;
+  line-height: 1.8;
+  padding: .5rem;
+}
+
+.menu .box-container .box .price span {
+  font-weight: 700;
+  color: var(--red);
+    font-size: 1.5rem;
+  text-decoration: line-through;
+}
+
+.menu .box-container .box:hover {
+  background: #fff;
+  transition: all 0.3s ease 0s;
+  transform: translate(0, -5px);
+} 
+
+.menu .box-container .box:hover >* {
+  color: #000;
+}
+
+
+.products .box-container {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+}
+
+.products .box-container .box {
+  padding: 2rem;
+  text-align: center;
+  border:var(--border);
+}
+
+
+
+.products .box-container .box .icons a {
+  height: 5rem; width: 5rem; line-height: 5rem;
+  font-size: 2rem;
+  border: var(--border);
+  color: #fff;
+  margin: .3rem;
+}
+
+.products .box-container .box .icons a:hover {
+  background-color: var(--primary-color);
+}
+
+.products .box-container .box .image img {
+  height: 22rem;
+  margin-top: 1rem;
+}
+
+.products .box-container .box .content h3 {
+  font-size: 2rem;
+  color: #fff;
+  padding: 1rem 0;
+}
+
+.products .box-container .box .content .stars i {
+  color: var(--primary-color);
+  font-size: 1.7rem;
+}
+
+.products .box-container .box .content .price {
+  font-size: 2.5rem;
+  color: #fff;
+}
+
+.products .box-container .box .price span {
+  color: #fff;
+  font-size: 1.5rem;
+  text-decoration: line-through;
+  font-weight: 700;
+  color: var(--red);
+}
+
+.products .box-container .box:hover {
+  transition: all 0.3s ease 0s;
+  transform: translate(0, -15px);
+}
+
+
+
+/* ////////////////////////////////////////////// */
+
+.contact-container .row {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.contact-container .row .image {
+  flex: 1 1 45rem;
+}
+
+.contact-container .row .image img {
+  width: 70%;
+  height: 100%;
+  border-bottom: 5px solid rgb(4, 4, 4);
+  box-shadow: 0 10px 10px 5px rgba(0, 0, 0, 0.5);
+  margin-top: 2rem;
+  margin-left: 2rem;
+  cursor: pointer;
+}
+
+.contact-container .row .content {
+  flex: 1 1 45rem;
+  padding: 2rem;
+}
+
+.contact-container .row .content h3 {
+  font-size: 3rem;
+  color: #fff;
+}
 
 
 
@@ -403,6 +547,13 @@ transition: all 0.3s ease 0s;
 section {
   padding: 2rem;
 }
+.about-container .row .image  {
+  display: flex;
+  justify-content: center;
+}
+.about-container .row .image img {
+  width: 50%;
+}
 }
 
 @media (max-width: 768px) {
@@ -446,8 +597,8 @@ section {
 .home-container .content p {
   font-size: 1.5rem;
 }
-
 }
+
 
 @media (max-width: 450px) {
   html {
@@ -456,5 +607,4 @@ section {
 
 
 }
-
 

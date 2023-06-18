@@ -4,8 +4,9 @@
   --color-hover: #bebebe;
   --black: #000000e3;
   --red: #f80000;
-  --border: .1rem solid rgba(255, 255, 255, 0.2);
-  --background: #090e0f;
+  --border: .2rem solid rgba(14, 13, 13, 0.2);
+  --background: #fff;
+  --green-latter: rgba(40, 181, 40);
 }
 
 * {
@@ -39,12 +40,12 @@ body {
   background: var(--background);
 }
 
-section {
+section, main {
   padding: 2rem 7%;
 }
 
 .heading {
-  color: rgb(255, 255, 255);
+  color: rgb(40, 181, 40);
   text-transform: uppercase;
   text-align: center;
   padding-bottom: 3.5rem;
@@ -237,11 +238,12 @@ section {
   filter: brightness(100%);
 }
 
-.home-container .content h3 {
-  font-size: 6rem;
+.home-container .content h1 {
+  font-size: 3.9rem;
   color: rgb(255, 255, 255);
   text-transform: uppercase;
 }
+
 
 .home-container .content p {
   font-size: 1rem;
@@ -250,6 +252,8 @@ section {
   line-height: 1.8;
   padding: 1rem 0px;
 }
+
+
 
 .about-container .row {
   display: flex;
@@ -275,8 +279,10 @@ section {
   cursor: pointer;
 }
 
-.about-container .row .image img:hover {
-  transform: rotate(360deg);
+.about-container  img:hover {
+  cursor: grab;
+ 
+  transform: scale(1.1);
 }
 
 .about-container .row .content {
@@ -284,12 +290,19 @@ section {
   padding: 2rem;
 }
 
-.about-container .row .content h3 {
+.about-container .row .content span {
+  color: rgb(40, 181, 40);
+  padding-top: 1rem;
+  font-size: 2rem;
+}
+
+.about-container .row .content h2 {
   text-transform: uppercase;
   font-size: 3rem;
   color: var(--color-letter);
   padding: 1rem 0px;
 }
+
 
 .about-container .row .content p {
   font-size: 1.6rem;
@@ -308,29 +321,29 @@ section {
   padding: 5rem;
   text-align: center;
   border: var(--border);
-  background-color: rgb(0, 0, 0);
+  background-color: #dedede;
+  box-shadow: rgba(0, 0, 0, 0.5) 1px 1px 10px 5px;
+
   transition: all 0.3s ease 0s;
   border-radius: 1rem;
-
-
-
-
 }
 
 .menu .box-container .box img {
   height: 12rem;
 }
 
+
 .menu .box-container .box h3 {
   font-size: 2rem;
-  color: rgb(255, 255, 255);
+  color: rgb(30, 154, 30);
   padding: 1rem 0px;
 }
 
 .menu .box-container .box .price {
   font-size: 1.6rem;
-  color: rgb(204, 204, 204);
+  color: rgb(254, 255, 254);
   line-height: 1.8;
+  font-weight: 700;
   padding: 0.5rem;
 }
 
@@ -342,25 +355,26 @@ section {
 }
 
 .menu .box-container .box:hover {
-  background: rgb(230, 234, 222);
+  background: #dedede;
   transition: all 0.3s ease 0s;
   transform: translate(0px, -5px);
-}
-
-.menu .box-container .box:hover > * {
-  color: rgb(0, 0, 0);
 }
 
 .products .box-container {
   display: grid;
   gap: 1.5rem;
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  margin: 2rem;
 }
 
 .products .box-container .box {
   padding: 2rem;
-  text-align: center;
+  background: #dedede;
+  transition: all 0.3s ease 0s;
   border: var(--border);
+  text-align: center;
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.5) 1px 1px 10px 5px;
 }
 
 .products .box-container .box .icons a {
@@ -384,7 +398,7 @@ section {
 
 .products .box-container .box .content h3 {
   font-size: 2rem;
-  color: rgb(255, 255, 255);
+  color: var(--green-latter);
   padding: 1rem 0px;
 }
 
@@ -413,7 +427,8 @@ section {
 .review .box-container {
   display: grid;
   gap: 1.5rem;
-  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+ grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  margin: 2rem;
 }
 
 .review .box-container .box {
@@ -424,7 +439,7 @@ section {
 
 .review .box-container .box p {
   font-size: 1.5rem;
-  color: rgb(204, 204, 204);
+  color: var(--green-latter);
   line-height: 1.8;
   padding: 2rem 0px;
 }
@@ -549,7 +564,8 @@ section {
 
 .blogs .box-container .box .content .title {
   font-size: 2rem;
-  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  color: rgb(13, 13, 13);
   padding: 1rem 0px;
 }
 
@@ -567,7 +583,7 @@ section {
 .blogs .box-container .box .content p {
   font-size: 1.6rem;
   line-height: 1.8;
-  color: rgb(204, 204, 204);
+  color: var(--green-latter);
   padding: 1rem 0px;
 }
 

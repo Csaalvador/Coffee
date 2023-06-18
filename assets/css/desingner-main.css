@@ -71,7 +71,8 @@ span {
   background: rgba(0, 0, 0, 0.396);
   justify-content: space-between;
   border-bottom: var(--border);
-  height: 10%;
+  height: 10%
+  ;
 }
 
 .header .logo img {

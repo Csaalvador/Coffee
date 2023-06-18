@@ -1,12 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Red+Hat+Display:ital,wght@0,500;1,800&family=Roboto+Slab:wght@100;300;400;500;700&display=swap"); :root {
-  --primary-color: #1a73e8;
-  --color-letter: #393939;
+  --primary-color: #1A120B;
+  --color-letter: #3C2A21;
   --color-hover: #bebebe;
-  --black: #000000e3;
+  --background-items: #A4907C;
   --red: #f80000;
   --border: .2rem solid rgba(14, 13, 13, 0.2);
-  --background: #fff;
-  --green-latter: rgba(40, 181, 40);
+  --background: #8D7B68;
+  --marronzin-latter: #3C2A21;
 }
 
 * {
@@ -44,18 +44,20 @@ section, main {
   padding: 2rem 7%;
 }
 
+span {
+  color: #E6B325;
+  text-transform: uppercase;
+}
+
 .heading {
-  color: rgb(40, 181, 40);
+  color: var(--marronzin-latter);
   text-transform: uppercase;
   text-align: center;
   padding-bottom: 3.5rem;
   font-size: 4rem;
 }
 
-.heading span {
-  color: var(--primary-color);
-  text-transform: uppercase;
-}
+
 
 .header {
   position: fixed;
@@ -63,12 +65,13 @@ section, main {
   top: 0px;
   left: 0px;
   right: 0px;
-  padding: 1.5rem 7%;
+  padding: 1.4rem 7%;
   z-index: 1000;
   align-items: center;
   background: rgba(0, 0, 0, 0.396);
   justify-content: space-between;
   border-bottom: var(--border);
+  height: 10%;
 }
 
 .header .logo img {
@@ -128,6 +131,7 @@ section, main {
   width: 100%;
   height: 100%;
   padding: 1rem;
+  border: none;
 }
 
 .header .search-box-section label {
@@ -229,9 +233,14 @@ section, main {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background: url("../image/background/image-background-home.jpg") center center / cover no-repeat;
-  filter: brightness(80%);
+  background: url("../image/background/R\ \(1\).png");
+  background-size: 40rem;
+  background-repeat: no-repeat;
+  background-position-y: 50%;
+  background-position-x:  90%; ;
+  filter: brightness(100%);
 }
+
 
 .home-container .content {
   max-width: 60rem;
@@ -245,9 +254,10 @@ section, main {
 }
 
 
+
 .home-container .content p {
-  font-size: 1rem;
-  color: rgb(238, 238, 238);
+  font-size: 1.5rem;
+  color: var(--marronzin-latter);
   font-weight: 800;
   line-height: 1.8;
   padding: 1rem 0px;
@@ -260,7 +270,7 @@ section, main {
   align-items: center;
   width: 100%;
   flex-wrap: wrap;
-  background: rgb(255, 255, 255);
+  background: var(--background-items);
   box-shadow: rgba(0, 0, 0, 0.5) 1px 1px 10px 5px;
   border-radius: 2rem;
   margin-bottom: 10px;
@@ -290,10 +300,12 @@ section, main {
   padding: 2rem;
 }
 
+
 .about-container .row .content span {
-  color: rgb(40, 181, 40);
+
+
   padding-top: 1rem;
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 .about-container .row .content h2 {
@@ -321,7 +333,7 @@ section, main {
   padding: 5rem;
   text-align: center;
   border: var(--border);
-  background-color: #dedede;
+  background-color: var(--background-items);
   box-shadow: rgba(0, 0, 0, 0.5) 1px 1px 10px 5px;
 
   transition: all 0.3s ease 0s;
@@ -335,7 +347,7 @@ section, main {
 
 .menu .box-container .box h3 {
   font-size: 2rem;
-  color: rgb(30, 154, 30);
+  color: #E6B325;
   padding: 1rem 0px;
 }
 
@@ -355,7 +367,7 @@ section, main {
 }
 
 .menu .box-container .box:hover {
-  background: #dedede;
+  background: #F1DEC9;
   transition: all 0.3s ease 0s;
   transform: translate(0px, -5px);
 }
@@ -369,12 +381,12 @@ section, main {
 
 .products .box-container .box {
   padding: 2rem;
-  background: #dedede;
+  background: #8D7B68;
   transition: all 0.3s ease 0s;
   border: var(--border);
   text-align: center;
   border-radius: 1rem;
-  box-shadow: rgba(0, 0, 0, 0.5) 1px 1px 10px 5px;
+  box-shadow: rgba(0, 0, 0, 0.5) 1px 1px 1px 1px;
 }
 
 .products .box-container .box .icons a {
@@ -476,8 +488,9 @@ section, main {
 .contact .row {
   display: flex;
   align-items: center;
-  background: var(--black);
+  background: #A4907C;
   flex-wrap: wrap;
+  border:var(--border);
   gap: 1rem;
 }
 
@@ -492,7 +505,7 @@ section, main {
   flex: 1 1 45rem;
   padding: 5rem 2rem;
   text-align: center;
-  background: rgb(215, 218, 207);
+  background: transparent;
 }
 
 .contact .row form h3 {
@@ -506,12 +519,11 @@ section, main {
   align-items: center;
   margin-top: 2rem;
   margin-bottom: 2rem;
-  background: rgb(215, 218, 207);
   border: var(--border);
 }
 
 .contact .row form .inputBox span {
-  padding-left: 2rem;
+  padding: 0 1rem;
   font-size: 2rem;
   color: rgb(255, 255, 255);
 }
@@ -521,7 +533,7 @@ section, main {
   padding: 1rem 1.5rem;
   font-size: 1.6rem;
   color: rgb(255, 255, 255);
-  background: var(--background);
+  background: #A4907C;
   border: none;
   text-transform: none;
 }
@@ -652,7 +664,8 @@ section, main {
 }
 
 .contact-container .row .image {
-  flex: 1 1 45rem;
+  flex: 1 1 40rem;
+  display: contents;
 }
 
 .contact-container .row .image img {
@@ -701,10 +714,36 @@ section, main {
   transform: translateX(0px);
 }
 
+.show-cart-item:nth-child(1) {
+  transition-delay: 0.1s;
+}
+
+.show-cart-item:nth-child(2) {
+  transition-delay: 0.2s;
+}
+
+.show-cart-item:nth-child(3) {
+  transition-delay: 0.3s;
+}
+
+.show-cart-item:nth-child(4) {
+  transition-delay: 0.4s;
+}
+
+@media (max-width:1000px) {
+  .home-container {
+    background-image: url("../image/imagebank/rr.png");
+    opacity: 0.5;
+  }
+
+}
+
 @media (max-width: 991px) {
   html {
       font-size: 55%;
   }
+
+ 
 
   .header {
       padding: 1.5rem 2rem;
@@ -714,6 +753,11 @@ section, main {
       padding: 2rem;
   }
 
+  .header .logo img {
+      height: 5rem;
+      margin: 0px 1rem;
+  }
+  
   .about-container .row .image {
       display: flex;
       justify-content: center;
@@ -727,6 +771,10 @@ section, main {
 @media (max-width: 768px) {
   #menu-btn {
       display: inline-block;
+  }
+
+  .home-container {
+    background-image: none;
   }
 
   .header .navbar {
@@ -774,4 +822,25 @@ section, main {
   html {
       font-size: 50%;
   }
+}
+
+
+/* animação com keyframes na header */
+
+.progress {
+  background-color: #fff;
+  overflow: hidden;
+  width: 16rem; height: 0.25rem;
+}
+
+.progress .inner {
+  background-color: #3C2A21;
+  height: 100%;
+  transform-origin: left;
+  animation: progress 10s  infinite;
+}
+
+@keyframes progress {
+  from { transform: scaleX(-1%) translateX(-5%); }
+  to { transform: scaleX(75%) translateX(130%); }
 }

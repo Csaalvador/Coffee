@@ -275,6 +275,12 @@ span:hover {
   padding: 1rem 0px;
 }
 
+.home-container .content h3 {
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.6);
+  text-transform: uppercase;
+}
+
 .about-container .row {
   display: flex;
   align-items: center;
@@ -746,6 +752,10 @@ span:hover {
     font-size: 55%;
   }
 
+    .home-container .content h3 {
+    display: none;
+  }
+
   .header {
     padding: 1.5rem 2rem;
   }
@@ -777,6 +787,7 @@ span:hover {
   .home-container {
     background-image: none;
   }
+
 
   .header .navbar {
     position: absolute;

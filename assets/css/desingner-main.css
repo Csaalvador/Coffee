@@ -289,7 +289,8 @@ span:hover {
 
 .home-container .content p {
   font-size: 1.5rem;
-  color: var(--color-letter);
+  color: var(--color-letter
+  );
   font-weight: 800;
   line-height: 1.8;
   padding: 1rem 0px;
@@ -675,6 +676,10 @@ span:hover {
   line-height: 1.8;
   color: var(--green-latter);
   padding: 1rem 0px;
+}
+
+.blogs .box-container .box .content h2 {
+  color: #cbf110;
 }
 
 /* quero que os elemenos surjam com scroll */

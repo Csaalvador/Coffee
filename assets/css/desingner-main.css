@@ -831,11 +831,6 @@ span:hover {
   transition-delay: 0.4s;
 }
 
-@media (max-width: 1000px) {
-  .home-container {
-    opacity: 0.5;
-  }
-}
 
 @media (max-width: 991px) {
   html {

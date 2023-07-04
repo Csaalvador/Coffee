@@ -79,7 +79,7 @@ span:hover {
   padding: 1.4rem 7%;
   z-index: 1000;
   align-items: center;
-  background: rgba(0, 0, 0, 0.396);
+  background: rgba(0, 0, 0, 0.877);
   justify-content: space-between;
   border-bottom: var(--border);
   height: 10%;
@@ -146,7 +146,7 @@ span:hover {
 }
 
 .header .search-box-section label {
-  color: var(--black);
+  color: var(--color-letter);
   font-size: 1.6rem;
   margin-right: 2rem;
 }
@@ -248,11 +248,11 @@ span:hover {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background: url("../image/background/Opening.png");
-  background-size: 100% 100%;
-    background-position: center;
+  background: url("../image/background/BKD.png");
+  background-size: 80%;
+  background-position-x:  98%;
+  background-position-y:  100%;
   background-repeat: no-repeat;
-  filter: brightness(80%);
 }
 
 .home-container .content {
@@ -611,7 +611,7 @@ span:hover {
   padding: 1rem 1.5rem;
   font-size: 1.6rem;
   color: rgb(255, 255, 255);
-  background: #F2EAD3                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ;
+  background: #DFD7BF                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ;
   border: none;
   text-transform: none;
 }
@@ -682,7 +682,6 @@ span:hover {
   color: #cbf110;
 }
 
-/* quero que os elemenos surjam com scroll */
 
 .blogs .box-container .box {
   opacity: 0;
@@ -756,7 +755,6 @@ span:hover {
 
 .footer .credit span {
   color: var(--primary-color);
-  text-decoration:solid;
 }
 
 .contact-container .row {
@@ -835,7 +833,6 @@ span:hover {
 
 @media (max-width: 1000px) {
   .home-container {
-    background-image: url("../image/imagebank/rr.png");
     opacity: 0.5;
   }
 }

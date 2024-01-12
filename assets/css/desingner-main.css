@@ -461,6 +461,7 @@ span:hover {
 .products .box-container .box .image img {
   height: 22rem;
   margin-top: 1rem;
+  width: 100%;
 }
 
 .products .box-container .box .content h3 {
